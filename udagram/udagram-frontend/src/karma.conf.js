@@ -31,7 +31,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome', 'Firefox', 'Edge'],
+    browsers: ['FirefoxHeadless'],
     customLaunchers: {
       'FirefoxHeadless': {
         base: 'Firefox',
