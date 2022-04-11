@@ -33,6 +33,15 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome', 'Firefox', 'Edge'],
     customLaunchers: {
+      'FirefoxHeadless': {
+        base: 'Firefox',
+        flags: [
+          '-headless',
+        ],
+        prefs: {
+          'network.proxy.type': 0
+        }
+      },
       ChromeNoSandbox: {
         base: 'Chrome',
         flags: ['--no-sandbox']
