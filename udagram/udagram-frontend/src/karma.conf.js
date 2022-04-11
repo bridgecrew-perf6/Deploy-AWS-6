@@ -7,8 +7,8 @@ module.exports = function (config) {
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
-      require('@chiragrupani/karma-chromium-edge-launcher'),
       require('karma-chrome-launcher'),
+      require('@chiragrupani/karma-chromium-edge-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
@@ -21,12 +21,12 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['progress', 'Edge'],
+    reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome', 'Firefox', 'Edge'],
     singleRun: false
   });
 };
