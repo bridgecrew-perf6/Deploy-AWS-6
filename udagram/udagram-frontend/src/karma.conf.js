@@ -10,7 +10,6 @@ module.exports = function (config) {
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
-
       require('karma-chrome-launcher'),
       require('@chiragrupani/karma-chromium-edge-launcher'),
       require('karma-firefox-launcher'),
@@ -31,19 +30,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['FirefoxHeadless'],
+    browsers: ['ChromeHeadlessNoSandbox'],
     customLaunchers: {
-      'FirefoxHeadless': {
-        base: 'Firefox',
-        flags: [
-          '-headless',
-        ],
-        prefs: {
-          'network.proxy.type': 0
-        }
-      },
-      ChromeNoSandbox: {
-        base: 'Chrome',
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
         flags: ['--no-sandbox']
       }
     },
