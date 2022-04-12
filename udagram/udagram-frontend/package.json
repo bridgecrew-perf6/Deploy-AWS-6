@@ -8,7 +8,7 @@
     "start": "ng serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
-    "test": "export NODE_OPTIONS=--openssl-legacy-provider; ng test",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider;ENV CHROME_BIN=/usr/bin/google-chrome; ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
