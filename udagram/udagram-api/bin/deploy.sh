@@ -1,6 +1,5 @@
 eb init udagram-api -r $AWS_REGION -p node.js
-eb use Deploy4-env
-eb deploy Deploy4-env
+eb deploy deploy4-env
 eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
 eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
 eb setenv POSTGRES_DB=$POSTGRES_DB
