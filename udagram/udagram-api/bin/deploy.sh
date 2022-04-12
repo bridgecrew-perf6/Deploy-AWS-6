@@ -1,3 +1,5 @@
+eb init udagram-api -r us-east-1 -p node.js
+eb deploy Deploy4-env
 eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
 eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
 eb setenv POSTGRES_DB=$POSTGRES_DB
