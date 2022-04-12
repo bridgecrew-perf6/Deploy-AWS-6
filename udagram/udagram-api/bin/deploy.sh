@@ -1,4 +1,4 @@
-eb init udagram-api -r $AWS_REGION -p node.js
+eb init deploy4 -r $AWS_REGION -p node.js
 eb use deploy4-env 
 eb deploy
 
