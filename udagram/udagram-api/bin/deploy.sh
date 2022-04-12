@@ -1,7 +1,6 @@
 eb init deploy4 -r $AWS_REGION -p node.js
 eb use deploy4-env 
 eb deploy
-
 eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
 eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
 eb setenv POSTGRES_DB=$POSTGRES_DB
